@@ -9,25 +9,7 @@
 <%@page import="com.model2.mvc.common.Page" %>
 <%@ page import="com.model2.mvc.common.util.CommonUtil"%> --%>
 
-<%-- <%
-	String title="";
-	
-	String menu=(String) request.getAttribute("menu");
-	Page resultPage = (Page)request.getAttribute("resultPage");
-	Search search = (Search)request.getAttribute("search");
-	
-	Map<String, Object> map = (HashMap<String, Object>) request.getAttribute("map");
-	
-	String searchCondition = CommonUtil.null2str(search.getSearchCondition());
-	String searchKeyword = CommonUtil.null2str(search.getSearchKeyword());
 
-	int maxPage = 0;
-	List<Product> list = null;
-	if (map != null) {
-		maxPage = ((Integer) map.get("totalCount")).intValue();
-		list = (List<Product>) map.get("list");
-	}
-%> --%>
 <html>
 <head>
 <title>상품 목록조회</title>

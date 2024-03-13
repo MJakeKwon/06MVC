@@ -95,7 +95,7 @@ public class ProductController{
 	}
 	
 	@RequestMapping("/listProduct.do")
-	public String listUser( @ModelAttribute("search") Search search , Model model ,String menu, HttpServletRequest request) throws Exception{
+	public String listProduct( @ModelAttribute("search") Search search , Model model ,String menu, HttpServletRequest request) throws Exception{
 		
 		System.out.println("/listProduct.do");
 		
