@@ -36,6 +36,12 @@ public class ProductServiceImpl implements ProductService {
 		List<Object> list = productDao.getProductList(search);
 		int totalCount = productDao.getTotalCount(search);
 		
+		for(int i=0;i<list.size();i++) {
+			if(((Product)list.get(i)).getProTranCode()==null) {
+				((Product)list.get(i)).setProTranCode("0");
+			}
+		}
+		
 		Map<String,Object> map = new HashMap<String, Object>();
 		map.put("list", list);
 		map.put("totalCount", new Integer(totalCount));

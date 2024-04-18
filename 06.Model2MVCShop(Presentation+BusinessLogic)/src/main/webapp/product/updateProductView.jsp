@@ -2,14 +2,6 @@
     pageEncoding="EUC-KR"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<%-- 
-<%@ page import="com.model2.mvc.service.domain.Product"%>
-
-<%
-	Product prod = (Product)request.getAttribute("prod");
-%> 
---%>
-
 <html>
 <head>
 <title>상품정보수정</title>
@@ -56,7 +48,7 @@ function fncAddProduct(){
 
 <form name="detailForm" method="post">
 
-<input type="hidden" name="prodNo" value="${prod.prodNo}"/>
+<input type="hidden" name="prodNo" value="${product.prodNo}"/>
 
 <table width="100%" height="37" border="0" cellpadding="0" cellspacing="0">
 	<tr>
@@ -91,7 +83,7 @@ function fncAddProduct(){
 				<tr>
 					<td width="105">
 						<input 	type="text" name="prodName" class="ct_input_g" 
-										style="width: 100px; height: 19px" maxLength="20" value="${prod.prodName}">
+										style="width: 100px; height: 19px" maxLength="20" value="${product.prodName}">
 					</td>
 				</tr>
 			</table>
@@ -106,7 +98,7 @@ function fncAddProduct(){
 		</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">
-			<input type="text" name="prodDetail" value="${prod.prodDetail}" class="ct_input_g" 
+			<input type="text" name="prodDetail" value="${product.prodDetail}" class="ct_input_g" 
 						style="width: 100px; height: 19px" maxLength="10"	minLength="6">
 		</td>
 	</tr>
@@ -119,7 +111,7 @@ function fncAddProduct(){
 		</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">
-			<input type="text" readonly="readonly" name="manuDate" value="${prod.manuDate}" 	
+			<input type="text" readonly="readonly" name="manuDate" value="${product.manuDate}" 	
 						class="ct_input_g" style="width: 100px; height: 19px" maxLength="10" minLength="6">&nbsp;
 						<img 	src="../images/ct_icon_date.gif" width="15" height="15" 
 									onclick="show_calendar('document.detailForm.manuDate', document.detailForm.manuDate.value)" />
@@ -134,7 +126,7 @@ function fncAddProduct(){
 		</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">
-			<input type="text" name="price" value="${prod.price}"
+			<input type="text" name="price" value="${product.price}"
 						class="ct_input_g" style="width: 100px; height: 19px" maxLength="50"/>&nbsp;원
 		</td>
 	</tr>
@@ -146,7 +138,7 @@ function fncAddProduct(){
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">
 			<input	type="text" name="fileName" class="ct_input_g" 
-						style="width: 200px; height: 19px" maxLength="13" value="${prod.fileName}"/>
+						style="width: 200px; height: 19px" maxLength="13" value="${product.fileName}"/>
 						
 		</td>
 	</tr>

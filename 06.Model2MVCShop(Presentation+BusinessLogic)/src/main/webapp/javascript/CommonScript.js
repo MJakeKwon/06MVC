@@ -463,8 +463,8 @@ function fncNumLengthCheck(value, first, last){
         return ((c >= "0") && (c <="9"))
     }
     
-     function fncGetList(currentPage)
-     {
+function fncGetList(currentPage)
+{
         document.getElementById("currentPage").value = currentPage;
    		document.detailForm.submit();
-    }
+}
