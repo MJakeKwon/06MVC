@@ -98,7 +98,7 @@ public class Purchase {
 	}
 
 	public void setTranCode(String tranCode) {
-		this.tranCode = tranCode;
+		this.tranCode = tranCode.trim();
 	}
 
 	public int getTranNo() {

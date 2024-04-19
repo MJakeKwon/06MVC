@@ -20,7 +20,6 @@
 		<result property="orderDate" column="order_date" jdbcType="DATE" />
 		<result property="divyDate" column="dlvy_date" jdbcType="DATE" />
 
-
 	</resultMap>
 
 	<insert 	id="insertPurchase"		parameterType="purchase" >

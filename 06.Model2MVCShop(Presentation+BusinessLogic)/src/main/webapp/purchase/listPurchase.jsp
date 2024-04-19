@@ -101,7 +101,7 @@
 						<td></td>
 						<td align="left">
 							<c:if test ="${purchase.tranCode eq '2' }">
-								<a href="/updateTranCodeByProd.do?tranNo=${purchase.tranNo}&tranCode=3"/>
+								<a href="/updateTranCode.do?tranNo=${purchase.tranNo}&tranCode=3"/>
 								물건 도착(수령 확인)
 								</a>
 							</c:if>

@@ -143,7 +143,7 @@ public class PurchaseController{
 															@RequestParam("tranCode") int tranCode) throws Exception {
 		System.out.println("/updateTranCode");
 		ModelAndView modelAndView = new ModelAndView();
-		purchaseService.updatePurchase(purchase);
+		purchaseService.updateTranCode(purchase);
 		purchaseService.getPurchase(tranNo);
 		purchaseService.getPurchase(tranCode);
 		
